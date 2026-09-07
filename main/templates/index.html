@@ -1,0 +1,207 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Python Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Primary">
+            <a class="logo" href="#home">Your Name</a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul id="nav-menu" class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container hero-inner">
+                <p class="eyebrow">Available for internships &amp; junior roles</p>
+                <h1>Your Name</h1>
+                <p class="title">Python Developer</p>
+                <p class="intro">I build clean, efficient and scalable web applications using Python and Django.</p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#projects">View Projects</a>
+                    <a class="btn btn-ghost" href="#contact">Contact Me</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container about-grid">
+                <div class="about-image">
+                    <img src="{% static 'images/profile.svg' %}" alt="Placeholder profile portrait of Your Name">
+                </div>
+                <div>
+                    <h2>About</h2>
+                    <p>
+                        I am a Python developer focused on building reliable web applications with Django.
+                        I enjoy turning ideas into simple, well-structured products and solving problems with clean code.
+                    </p>
+                    <p>
+                        My work covers backend logic, templates, databases, and REST APIs. I care about readability,
+                        practical design, and shipping features that are easy to maintain.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section section-alt">
+            <div class="container">
+                <h2>Skills</h2>
+                <p class="section-lead">Tools I use to design, build, and ship web applications.</p>
+                <div class="card-grid">
+                    <article class="card skill-card"><h3>Python</h3><p>Core language for backend logic and automation.</p></article>
+                    <article class="card skill-card"><h3>Django</h3><p>Full-stack web framework for robust applications.</p></article>
+                    <article class="card skill-card"><h3>HTML</h3><p>Semantic markup for accessible, structured pages.</p></article>
+                    <article class="card skill-card"><h3>CSS</h3><p>Responsive layouts, theming, and polished UI details.</p></article>
+                    <article class="card skill-card"><h3>JavaScript</h3><p>Lightweight interactivity without a frontend framework.</p></article>
+                    <article class="card skill-card"><h3>SQL</h3><p>Relational data modeling and practical querying.</p></article>
+                    <article class="card skill-card"><h3>Git &amp; GitHub</h3><p>Version control, collaboration, and code hosting.</p></article>
+                    <article class="card skill-card"><h3>REST APIs</h3><p>JSON APIs for clients, integrations, and services.</p></article>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <h2>Projects</h2>
+                <p class="section-lead">Sample work that shows how I use Python and Django in practice.</p>
+                <div class="card-grid projects-grid">
+                    <article class="card project-card">
+                        <h3>Django Blog</h3>
+                        <p>A blog where users can read posts, browse categories, and manage content from the Django admin.</p>
+                        <ul class="tags">
+                            <li>Python</li>
+                            <li>Django</li>
+                            <li>SQLite</li>
+                        </ul>
+                        <div class="card-actions">
+                            <a class="btn btn-small" href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            <a class="btn btn-small btn-ghost" href="https://example.com" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                        </div>
+                    </article>
+                    <article class="card project-card">
+                        <h3>Student Management System</h3>
+                        <p>A Django app for recording students, courses, and basic academic records with a simple dashboard.</p>
+                        <ul class="tags">
+                            <li>Python</li>
+                            <li>Django</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                        <div class="card-actions">
+                            <a class="btn btn-small" href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            <a class="btn btn-small btn-ghost" href="https://example.com" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                        </div>
+                    </article>
+                    <article class="card project-card">
+                        <h3>REST API Project</h3>
+                        <p>A REST API built with Django REST Framework for creating, listing, and updating resources over HTTP.</p>
+                        <ul class="tags">
+                            <li>Python</li>
+                            <li>Django REST Framework</li>
+                        </ul>
+                        <div class="card-actions">
+                            <a class="btn btn-small" href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            <a class="btn btn-small btn-ghost" href="https://example.com" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section section-alt">
+            <div class="container">
+                <h2>Education &amp; Experience</h2>
+                <p class="section-lead">Placeholder timeline — replace these details with your own.</p>
+                <ol class="timeline">
+                    <li>
+                        <h3>Education</h3>
+                        <p class="meta">Bachelor of Computer Science · 2022 – 2026</p>
+                        <p>Studied programming, databases, and web development fundamentals.</p>
+                    </li>
+                    <li>
+                        <h3>Internship</h3>
+                        <p class="meta">Python Developer Intern · Summer 2025</p>
+                        <p>Supported Django features, bug fixes, and basic API endpoints on a small product team.</p>
+                    </li>
+                    <li>
+                        <h3>Projects</h3>
+                        <p class="meta">Independent &amp; academic work</p>
+                        <p>Built blogs, CRUD apps, and APIs to practice Django models, views, templates, and REST design.</p>
+                    </li>
+                    <li>
+                        <h3>Certifications</h3>
+                        <p class="meta">Python &amp; Django · In progress</p>
+                        <p>Completed introductory Python coursework and Django web development modules.</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container contact-grid">
+                <div>
+                    <h2>Contact</h2>
+                    <p class="section-lead">Let’s talk about internships, junior roles, or a small Django project.</p>
+                    <ul class="contact-list">
+                        <li><span>Email</span> <a href="mailto:youremail@example.com">youremail@example.com</a></li>
+                        <li><span>GitHub</span> <a href="https://github.com/" target="_blank" rel="noopener noreferrer">github.com/your-username</a></li>
+                        <li><span>LinkedIn</span> <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">linkedin.com/in/your-name</a></li>
+                        <li><span>Location</span> Your City, Country</li>
+                    </ul>
+                </div>
+                <form class="card contact-form" method="post" action="{% url 'home' %}#contact" novalidate>
+                    {% csrf_token %}
+                    {% if messages %}
+                        {% for message in messages %}
+                            <p class="form-alert {% if message.tags %}{{ message.tags }}{% endif %}">{{ message }}</p>
+                        {% endfor %}
+                    {% endif %}
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" maxlength="120" required placeholder="Your name">
+
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" required placeholder="you@example.com">
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="How can I help?"></textarea>
+
+                    <button class="btn btn-primary" type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; 2026 Your Name. All rights reserved.</p>
+            <p>
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+                ·
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
